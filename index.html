@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>おみくじ</title>
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <main>
+      <h1>おみくじ</h1>
+      <p>ボタンを押して、今日の運勢を占ってみましょう。</p>
+
+      <button id="draw-button" type="button">おみくじを引く</button>
+
+      <section aria-labelledby="result-heading">
+        <h2 id="result-heading">結果</h2>
+        <div id="result" aria-live="polite" aria-atomic="true">
+          <p id="fortune-result">まだおみくじを引いていません。</p>
+          <p id="message-result">
+            ボタンを押すと、運勢とメッセージが表示されます。
+          </p>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>
